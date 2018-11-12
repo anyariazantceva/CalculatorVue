@@ -34,47 +34,6 @@
 				}
 			});
 		});
-		window.onload = function () {
-			var numberA = document.getElementById("numberA");
-			var numberB = document.getElementById("numberB");
-			var btnCalculate = document.getElementById("addition");
-			var btnMultiplicate = document.getElementById("multiplication");
-			var btnDiminute = document.getElementById("diminution");
-			var btnDivision = document.getElementById("division");
-			var result = document.getElementById("result");
-
-			btnCalculate.onclick = function () {
-				if (numberA && numberB != "") {
-					result.innerHTML = "Сумма чисел равна: " + Math.round((numberA.value*1)  + (numberB.value*1));
-				} else {
-
-				}
-			};
-
-			btnMultiplicate.onclick = function () {
-				if (numberA && numberB != "") {
-					result.innerHTML = "Произведение чисел равно: " + (numberA.value * numberB.value);
-				} else {
-
-				}
-			};
-
-			btnDiminute.onclick = function () {
-				if (numberA && numberB != "") {
-					result.innerHTML = "Разность чисел равна: " + (numberA.value - numberB.value);
-				} else {
-
-				}
-			};
-
-			btnDivision.onclick = function () {
-				if (numberA && numberB != "") {
-					result.innerHTML = "Частное чисел равно: " + (numberA.value / numberB.value);
-				} else {
-
-				}
-			};
-		};
 	</script>
 </head>
 <body>
