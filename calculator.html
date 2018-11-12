@@ -79,13 +79,13 @@
 </head>
 <body>
 <div id="app">
-	<input type ="text" id="numberA" placeholder="Число А">
-	<input type ="text" id="numberB" placeholder="Число B">
-	<button id="addition">+</button>
-	<button id="multiplication">*</button>
-	<button id="diminution">-</button>
-	<button id="division">/</button>
-	<p id="result"></p>
+	<input v-model="numberA" type ="text" placeholder="Число А">
+	<input v-model="numberB" type ="text" placeholder="Число B">
+	<button v-if="numberA && numberB != ''" @click="add()">+</button>
+	<button v-if="numberA && numberB != ''" @click="multiplicate()">*</button>
+	<button v-if="numberA && numberB != ''" @click="diminute()">-</button>
+	<button v-if="numberA && numberB != ''" @click="divide()">/</button>
+	<p>{{ result }}</p>
 </div>
 </body>
 </html>
