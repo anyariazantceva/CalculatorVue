@@ -14,6 +14,24 @@
                     numberB: "",
                     result: "",
                 },
+
+				methods: {
+                    add: function () {
+                        this.result = "Сумма чисел равна: " + Math.round((this.numberA*1)  + (this.numberB*1));
+                    },
+
+                    multiplicate: function () {
+                        this.result = "Произведение чисел равно: " + (this.numberA * this.numberB);
+                    },
+
+                    diminute: function () {
+                        this.result = "Разность чисел равна: " + (this.numberA - this.numberB);
+                    },
+
+                    divide: function () {
+                        this.result = "Частное чисел равно: " + (this.numberA / this.numberB);
+                    }
+				}
 			});
 		});
 		window.onload = function () {
