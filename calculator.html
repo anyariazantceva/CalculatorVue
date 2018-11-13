@@ -40,10 +40,10 @@
 <div id="app">
 	<input v-model="numberA" type ="text" placeholder="Число А">
 	<input v-model="numberB" type ="text" placeholder="Число B">
-	<button v-if="numberA && numberB != ''" @click="add()">+</button>
-	<button v-if="numberA && numberB != ''" @click="multiplicate()">*</button>
-	<button v-if="numberA && numberB != ''" @click="diminute()">-</button>
-	<button v-if="numberA && numberB != ''" @click="divide()">/</button>
+	<button v-if="numberA!='' && numberB != ''" @click="add()">+</button>
+	<button v-if="numberA!='' && numberB != ''" @click="multiplicate()">*</button>
+	<button v-if="numberA!='' && numberB != ''" @click="diminute()">-</button>
+	<button v-if="numberA!='' && numberB != ''" @click="divide()">/</button>
 	<p>{{ result }}</p>
 </div>
 </body>
